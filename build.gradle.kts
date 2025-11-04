@@ -14,6 +14,12 @@ java {
 plugins {
     java
     application
+    id("org.openjfx.javafxplugin") version "0.1.0"
+}
+
+javafx {
+    version = "22.0.1"
+    modules("javafx.base", "javafx.graphics", "javafx.controls")
 }
 
 repositories {
